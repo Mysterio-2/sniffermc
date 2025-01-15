@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - SnifferMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="vote-page">
+    <div class="navbar">
+        <div class="nav-content">
+            <nav>
+                <a href="index.html" class="minecraft-btn">
+                    HOME
+                    <div class="particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="xp-particle"></div>
+                        <div class="enchant-particle"></div>
+                    </div>
+                </a>
+                <a href="#store" class="minecraft-btn store-btn">
+                    STORE
+                    <div class="particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="xp-particle"></div>
+                        <div class="enchant-particle"></div>
+                    </div>
+                </a>
+                <a href="#wiki" class="minecraft-btn wiki-btn">
+                    WIKI
+                    <div class="particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="xp-particle"></div>
+                        <div class="enchant-particle"></div>
+                    </div>
+                </a>
+                <a href="vote.html" class="minecraft-btn vote-btn active">
+                    VOTE
+                    <div class="particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="xp-particle"></div>
+                        <div class="enchant-particle"></div>
+                    </div>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="vote-page">
+        <section class="vote-section">
+            <h1 class="pixel-text">Vote for SnifferMC</h1>
+            <div class="vote-description">
+                <p>Help support our server by voting! Each vote helps us grow and provides you with awesome rewards.</p>
+            </div>
+
+            <div class="vote-links">
+                <div class="vote-card">
+                    <h3>Planet Minecraft</h3>
+                    <a href="Not Available" target="_blank" class="minecraft-button">Vote PMC</a>
+                </div>
+
+                <div class="vote-card">
+                    <h3>Minecraft Server List</h3>
+                    <a href="https://bit.ly/3BDYsrq" target="_blank" class="minecraft-button">Vote MCSL</a>
+                </div>
+
+                <div class="vote-card">
+                    <h3>Minecraft MP</h3>
+                    <a href="https://bit.ly/3ZR8ai4" target="_blank" class="minecraft-button">Vote MCMP</a>
+                </div>
+
+                <div class="vote-card">
+                    <h3>Minecraft Server Org</h3>
+                    <a href="https://bit.ly/4grniK2" target="_blank" class="minecraft-button">Vote MSO</a>
+                </div>
+
+                <div class="vote-card">
+                    <h3>Minecraft Server Net</h3>
+                    <a href="Soon" target="_blank" class="minecraft-button">Vote MSN</a>
+                </div>
+
+                <div class="vote-card">
+                    <h3>Top Gaming Servers</h3>
+                    <a href="Soon" target="_blank" class="minecraft-button">Vote TOPG</a>
+                </div>
+
+                <div class="vote-card">
+                    <h3>Top Minecraft Servers</h3>
+                    <a href="https://bit.ly/4fBcAQ2" target="_blank" class="minecraft-button">Vote TMCS</a>
+                </div>
+            </div>
+
+            <div class="vote-all-links">
+                <button id="open-all-votes" class="minecraft-button large-button">
+                    <span class="button-icon">🌐</span> Open All Vote Links
+                </button>
+            </div>
+
+            <div class="vote-rewards">
+                <h2 class="pixel-text">Vote Rewards</h2>
+                <ul>
+                    <li>🔑 1x Vote Key</li>
+                    <li>🏗️ 100 Claim Blocks</li>
+                    <li>💰 $1000 Money</li>
+                    <li>✈️ 60x Flight Charge</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="pixel-text">&copy; 2025 SnifferMC. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="minecraft-button">Discord</a>
+                <a href="#" class="minecraft-button">Twitter</a>
+                <a href="#" class="minecraft-button">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="particles-js" class="vote-particles"></div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 100,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#2ecc71'  // Green color for leaves
+                },
+                shape: {
+                    type: 'triangle',  // Leaf-like shape
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    anim: {
+                        enable: false
+                    }
+                },
+                size: {
+                    value: 5,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 2,
+                        size_min: 1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: false
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'bottom',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: false
+                    },
+                    onclick: {
+                        enable: false
+                    },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
