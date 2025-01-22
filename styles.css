@@ -30,6 +30,18 @@ body {
     background: var(--gradient-background);
 }
 
+body::before {
+    content: 'CSS LOADED ';
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,255,0,0.5);
+    color: black;
+    padding: 5px;
+    z-index: 9999;
+    display: block;
+}
+
 #particles-js {
     position: fixed;
     width: 100%;
