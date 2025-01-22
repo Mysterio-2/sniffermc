@@ -1,167 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vote - SnifferMC</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>SnifferMC: Top Minecraft Survival Server | McMMO, Economy, No Grief (2025)</title>
+    <meta name="description" content="Join SnifferMC - The ultimate grief-free Minecraft survival server with McMMO, player shops, exciting events, and a thriving community. Best Minecraft server experience in 2025!">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sniffermc.net">
+    <meta property="og:title" content="SnifferMC: Top Minecraft Survival Server">
+    <meta property="og:description" content="Join the best Minecraft survival server with McMMO, economy, no griefing, and epic community events!">
+    <meta property="og:image" content="https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SnifferMC: Top Minecraft Survival Server">
+    <meta name="twitter:description" content="Join the best Minecraft survival server with McMMO, economy, no griefing, and epic community events!">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sniffermc.net">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.4/tsparticles.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" as="script">
+    
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.4/tsparticles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "SnifferMC Minecraft Server",
+        "description": "A top-tier Minecraft survival server featuring McMMO, player-driven economy, no griefing, and exciting community events.",
+        "gameLocation": "Online Multiplayer",
+        "genre": ["Survival", "Multiplayer"],
+        "keywords": [
+            "Minecraft server",
+            "Survival server",
+            "McMMO server",
+            "No grief server",
+            "Player economy",
+            "Minecraft 2025"
+        ],
+        "operatingSystem": "Minecraft Java Edition",
+        "applicationCategory": "Multiplayer Game",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "image": "https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png"
+    }
+    </script>
 </head>
-<body class="vote-page">
-    <div class="navbar">
-        <div class="nav-content">
-            <nav>
-                <a href="index.html" class="minecraft-btn">
-                    HOME
-                    <div class="particles">
-                        <div class="particle"></div>
-                        <div class="particle"></div>
-                        <div class="xp-particle"></div>
-                        <div class="enchant-particle"></div>
-                    </div>
-                </a>
-                    </div>
-                </a>
-            </nav>
+<body>
+    <div id="particles-js"></div>
+    
+    <nav class="pirate-nav">
+        <div class="nav-logo">
+            <img src="https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png" alt="SnifferMC Logo">
+            <span>SnifferMC (AxolotlMC) 🌍</span>
         </div>
-    </div>
+        <ul class="nav-links">
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#features">🌟 Features</a></li>
+            <li><a href="https://discord.gg/D5zgSBuJN8" class="btn discord-btn">🤝 Discord</a></li>
+            <li><a href="https://store.sniffermc.net" class="btn store-btn">🛒 Store</a></li>
+        </ul>
+        <div class="nav-buttons">
+        </div>
+    </nav>
 
-    <main class="vote-page">
-        <section class="vote-section">
-            </div>
-
-            <div class="vote-links">
-                <div class="vote-card">
-                    <h3>Planet Minecraft</h3>
-                    <a href="Not Available" target="_blank" class="minecraft-button">Vote PMC</a>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Best Minecraft Survival Server in 2025 🌍</h1>
+                <h2>No Grief | McMMO | Player Economy | Epic Survival Adventures! 🏕️</h2>
+                <div class="hero-description">
+                    <p>Experience the ultimate grief-free Minecraft survival server with cutting-edge features, player-driven economy, and non-stop excitement. Join SnifferMC and transform your Minecraft journey!</p>
                 </div>
-
-                <div class="vote-card">
-                    <h3>Minecraft Server List</h3>
-                    <a href="https://bit.ly/3BDYsrq" target="_blank" class="minecraft-button">Vote MCSL</a>
+                <div class="server-ip-container">
+                    <input type="text" id="server-ip" value="play.sniffermc.net" readonly>
+                    <button onclick="copyIP()">Copy IP</button>
                 </div>
-
-                <div class="vote-card">
-                    <h3>Minecraft MP</h3>
-                    <a href="https://bit.ly/3ZR8ai4" target="_blank" class="minecraft-button">Vote MCMP</a>
-                </div>
-
-                <div class="vote-card">
-                    <h3>Minecraft Server Org</h3>
-                    <a href="https://bit.ly/4grniK2" target="_blank" class="minecraft-button">Vote MSO</a>
-                </div>
-
-                <div class="vote-card">
-                    <h3>Minecraft Server Net</h3>
-                    <a href="Soon" target="_blank" class="minecraft-button">Vote MSN</a>
-                </div>
-
-                <div class="vote-card">
-                    <h3>Top Gaming Servers</h3>
-                    <a href="Soon" target="_blank" class="minecraft-button">Vote TOPG</a>
-                </div>
-
-                <div class="vote-card">
-                    <h3>Top Minecraft Servers</h3>
-                    <a href="https://bit.ly/4fBcAQ2" target="_blank" class="minecraft-button">Vote TMCS</a>
-                </div>
-            </div>
-
-            <div class="vote-all-links">
-                <button id="open-all-votes" class="minecraft-button large-button">
-                    <span class="button-icon">🌐</span> Open All Vote Links
-                </button>
-            </div>
-
-            <div class="vote-rewards">
-                <h2 class="pixel-text">Vote Rewards</h2>
-                <ul>
-                    <li>🔑 1x Vote Key</li>
-                    <li>🏗️ 100 Claim Blocks</li>
-                    <li>💰 $1000 Money</li>
-                    <li>✈️ 60x Flight Charge</li>
-                </ul>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <div class="footer-content">
-            <p class="pixel-text">&copy; 2025 SnifferMC. All rights reserved.</p>
+        <section id="features" class="features-section">
+            <div class="section-header">
+                <h2>Why SnifferMC is the Top Minecraft Server in 2025</h2>
             </div>
-        </div>
-    </footer>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="https://images.minecraft-heads.com/render2d/head/28/280bf3945a3931391486bac27aa87ae4.webp" alt="McMMO Skills">
+                    <h3>Advanced McMMO Skills 💪</h3>
+                    <p>Level up unique skills and unlock special abilities in our top-rated McMMO Minecraft server. Become a master of your craft with unparalleled progression! 🌟</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://minecraft-heads.com/themes/mch-v2/assets/images/chest.webp" alt="Exciting Crates">
+                    <h3>Exclusive Crate Rewards 📦</h3>
+                    <p>Unlock special crates and discover rare rewards in our community-driven Minecraft server. Enhance your survival experience with epic, unique loot! 🎁</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://images.minecraft-heads.com/render3d/head/6b/6b223c9ba84bf7ddcaff745f6d1a6467.webp" alt="Player Economy">
+                    <h3>Dynamic Player Economy 💰</h3>
+                    <p>Join jobs, set up player shops, and trade in our thriving, player-driven economy system. The most interactive Minecraft economy server in 2025! 🏪</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://images.minecraft-heads.com/render3d/head/89/89ed0be17d41010bf96d5366d4cff529.webp" alt="PvE Challenges">
+                    <h3>Epic PvE Challenges ⚔️</h3>
+                    <p>Face exciting Player vs. Environment challenges in our grief-free survival server. Test your skills, conquer unique quests, and become a Minecraft legend! 🌋</p>
+                </div>
+            </div>
+        </section>
 
-    <div id="particles-js" class="vote-particles"></div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 SnifferMC. All rights reserved. 🌍</p>
+                <div class="social-links">
+                    <a href="https://discord.gg/D5zgSBuJN8">🤝 Discord</a>
+                    <a href="https://store.sniffermc.net">🛒 Store</a>
+                </div>
+            </div>
+        </footer>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS('particles-js', {
-            particles: {
-                number: {
-                    value: 100,
-                    density: {
+        <script>
+            function copyIP() {
+                const ipInput = document.getElementById('server-ip');
+                ipInput.select();
+                document.execCommand('copy');
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+                alert('Server IP copied to clipboard! 🌍');
+            }
+
+            // Particle Configuration
+            tsParticles.load("particles-js", {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { 
+                        value: ["#2563EB", "#6D28D9", "#1E293B", "#0A0E16", "#121826"] 
+                    },
+                    shape: { type: ["circle", "triangle"] },
+                    opacity: { value: 0.3, random: true },
+                    size: { value: 3, random: true },
+                    move: {
                         enable: true,
-                        value_area: 800
-                    }
-                },
-                color: {
-                    value: '#2ecc71'  // Green color for leaves
-                },
-                shape: {
-                    type: 'triangle',  // Leaf-like shape
-                    stroke: {
-                        width: 0,
-                        color: '#000000'
-                    }
-                },
-                opacity: {
-                    value: 0.5,
-                    random: true,
-                    anim: {
-                        enable: false
-                    }
-                },
-                size: {
-                    value: 5,
-                    random: true,
-                    anim: {
+                        speed: 1.5,
+                        direction: "top",
+                        random: true,
+                        out_mode: "out",
+                        bounce: false
+                    },
+                    line_linked: {
                         enable: true,
-                        speed: 2,
-                        size_min: 1,
-                        sync: false
+                        distance: 150,
+                        color: "#2563EB",
+                        opacity: 0.2,
+                        width: 1
                     }
                 },
-                line_linked: {
-                    enable: false
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: 'bottom',
-                    random: true,
-                    straight: false,
-                    out_mode: 'out',
-                    bounce: false,
-                    attract: {
-                        enable: false
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "repulse" },
+                        onclick: { enable: true, mode: "push" }
                     }
                 }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: {
-                    onhover: {
-                        enable: false
-                    },
-                    onclick: {
-                        enable: false
-                    },
-                    resize: true
-                }
-            },
-            retina_detect: true
-        });
-    </script>
-    <script src="script.js"></script>
-</body>
+            });
+        </script>
+    </body>
 </html>

@@ -1,0 +1,32 @@
+# Robots.txt for SnifferMC Minecraft Server
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location (replace with actual sitemap when created)
+Sitemap: https://sniffermc.net/sitemap.xml
+
+# Crawl-delay to prevent overwhelming the server
+Crawl-delay: 10
+
+# Directories to exclude
+Disallow: /private/
+Disallow: /admin/
+
+# Specific file exclusions
+Disallow: /server-config.json
+Disallow: /sensitive-data.txt
+
+# Performance and SEO optimization directives
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Yandex
+Crawl-delay: 5
+
+# Additional optimization for specific search engines
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
