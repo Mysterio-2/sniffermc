@@ -55,5 +55,46 @@ A dynamic, interactive website for SnifferMC, a Minecraft survival server focuse
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - Responsive on desktop and mobile devices
 
+## Hosting Troubleshooting
+
+### Common Issues and Solutions
+
+#### CSS/JavaScript Not Loading
+1. Ensure absolute paths are used for external resources
+2. Check browser console for loading errors
+3. Verify file permissions on hosted server
+4. Use browser developer tools to diagnose network issues
+
+#### Recommended Hosting Configuration
+- Use Apache or Nginx web server
+- Enable CORS if using external resources
+- Ensure `.htaccess` allows all file types
+- Set correct MIME types for CSS and JS files
+
+#### Debugging Steps
+1. Validate HTML/CSS with online validators
+2. Check network tab in browser developer tools
+3. Verify all file paths are correct
+4. Test on different browsers
+
+### Minimum Hosting Requirements
+- PHP 7.4+ or Static Hosting
+- 50MB Storage
+- HTTPS Support
+- Modern Browser Compatibility
+
+### Recommended Hosting Platforms
+- Netlify
+- Vercel
+- GitHub Pages
+- Cloudflare Pages
+
+### Troubleshooting Checklist
+- [ ] All files uploaded
+- [ ] Correct file permissions
+- [ ] External resources accessible
+- [ ] No mixed content warnings
+- [ ] CSS and JS files loading correctly
+
 ## License
  2025 SnifferMC. All rights reserved.
