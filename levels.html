@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnifferMC Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wiki-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="sniffermc-logo.png" alt="SnifferMC Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item" data-section="getting-started">
+                        <span class="menu-icon">🚀</span>
+                        <span class="menu-text">Getting Started</span>
+                    </li>
+                    <li class="menu-item" data-section="rules">
+                        <span class="menu-icon">📜</span>
+                        <span class="menu-text">Rules</span>
+                    </li>
+                    <li class="menu-item" data-section="ranks-levels">
+                        <span class="menu-icon">🏆</span>
+                        <span class="menu-text">Ranks and Levels</span>
+                    </li>
+                    <li class="menu-item" data-section="battlepass">
+                        <span class="menu-icon">🛡️</span>
+                        <span class="menu-text">Battle Pass</span>
+                    </li>
+                    <li class="menu-item" data-section="fusion-elements">
+                        <span class="menu-icon">⚡</span>
+                        <span class="menu-text">Fusion Elements</span>
+                    </li>
+                    <li class="menu-item active" data-section="levels">
+                        <span class="menu-icon">🔝</span>
+                        <span class="menu-text">Levels</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            <section id="levels" class="section active">
+                <div class="section-header">
+                    <h2>Server Levels</h2>
+                    <p>Explore and advance through our server's 100 unique levels!</p>
+                </div>
+
+                <div class="levels-container">
+                    <div class="level-search-container">
+                        <input type="text" id="level-search-input" placeholder="Search levels by command, perk, or reward...">
+                        <div id="level-search-results" class="search-results"></div>
+                    </div>
+
+                    <div class="level-details-popup" id="level-details-popup">
+                        <div class="popup-content">
+                            <span class="close-popup">&times;</span>
+                            <div id="popup-level-details">
+                                <!-- Dynamic level details will be inserted here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
