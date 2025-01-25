@@ -1,188 +1,491 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary SEO Meta Tags -->
-    <title>SnifferMC: Top Minecraft Survival Server | McMMO, Economy, No Grief (2025)</title>
-    <meta name="description" content="Join SnifferMC - The ultimate grief-free Minecraft survival server with McMMO, player shops, exciting events, and a thriving community. Best Minecraft server experience in 2025!">
-    
-    <!-- Open Graph / Facebook Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sniffermc.net">
-    <meta property="og:title" content="SnifferMC: Top Minecraft Survival Server">
-    <meta property="og:description" content="Join the best Minecraft survival server with McMMO, economy, no griefing, and epic community events!">
-    <meta property="og:image" content="https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png">
-    
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SnifferMC: Top Minecraft Survival Server">
-    <meta name="twitter:description" content="Join the best Minecraft survival server with McMMO, economy, no griefing, and epic community events!">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://sniffermc.net">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png">
-    
-    <!-- Stylesheet -->
+    <title>SnifferMC Wiki</title>
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Preload Critical Assets -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.4/tsparticles.min.js" as="script">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" as="script">
-    
-    <!-- External Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.4/tsparticles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Game",
-        "name": "SnifferMC Minecraft Server",
-        "description": "A top-tier Minecraft survival server featuring McMMO, player-driven economy, no griefing, and exciting community events.",
-        "gameLocation": "Online Multiplayer",
-        "genre": ["Survival", "Multiplayer"],
-        "keywords": [
-            "Minecraft server",
-            "Survival server",
-            "McMMO server",
-            "No grief server",
-            "Player economy",
-            "Minecraft 2025"
-        ],
-        "operatingSystem": "Minecraft Java Edition",
-        "applicationCategory": "Multiplayer Game",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "image": "https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png"
-    }
-    </script>
+    <link rel="stylesheet" href="fusion-elements.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="particles-js"></div>
+    <div class="wiki-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="sniffermc-logo.png" alt="SnifferMC Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item" data-section="getting-started">
+                        <span class="menu-icon">🚀</span>
+                        <span class="menu-text">Getting Started</span>
+                    </li>
+                    <li class="menu-item" data-section="rules">
+                        <span class="menu-icon">📜</span>
+                        <span class="menu-text">Rules</span>
+                    </li>
+                    <li class="menu-item" data-section="ranks-levels">
+                        <span class="menu-icon">🏆</span>
+                        <span class="menu-text">Ranks and Levels</span>
+                    </li>
+                    <li class="menu-item" data-section="battlepass">
+                        <span class="menu-icon">🛡️</span>
+                        <span class="menu-text">Battle Pass</span>
+                    </li>
+                    <li class="menu-item" data-section="fusion-elements">
+                        <span class="menu-icon">⚡</span>
+                        <span class="menu-text">Fusion Elements</span>
+                    </li>
+                    <li class="menu-item" data-section="levels">
+                        <span class="menu-icon">🔝</span>
+                        <span class="menu-text">Levels</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            <section id="getting-started" class="section active">
+                <div class="getting-started-container">
+                    <div class="getting-started-intro">
+                        <h2>Getting Started with SnifferMC</h2>
+                        <p>Climb the ranks, unlock incredible rewards, and become a legend in SnifferMC!</p>
+                    </div>
+                    
+                    <div class="server-info-banner">
+                        <div class="server-ip">
+                            <span class="ip-label">Server IP:</span>
+                            <span class="ip-value" id="server-ip" data-tooltip="Click to copy" onclick="copyServerIP()">play.sniffermc.com</span>
+                            <button class="copy-ip-btn" onclick="copyServerIP()">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="server-version">
+                            <span class="version-label">Version:</span>
+                            <span class="version-value">1.21.3</span>
+                        </div>
+                    </div>
+                    
+                    <div class="getting-started-content">
+                        <div class="getting-started-features">
+                            <div class="feature-card">
+                                <div class="feature-icon">💰</div>
+                                <h3>In-Game Economy</h3>
+                                <p>Earn and spend money by completing jobs, trading with other players, and using the ShopGUI.</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">🏆</div>
+                                <h3>Custom Ranks and Perks</h3>
+                                <p>Upgrade your rank in the store to unlock exclusive perks, kits, and commands.</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">📊</div>
+                                <h3>100-Level System</h3>
+                                <p>Progress through levels by playing and completing activities, unlocking unique rewards.</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">🎟️</div>
+                                <h3>Battle Pass</h3>
+                                <p>Seasonal challenges with amazing rewards. Work your way through the tiers for rare loot.</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <div class="feature-icon">🔮</div>
+                                <h3>Elemental Mastery</h3>
+                                <p>Collect six special elements: Air, Earth, Fire, Water, Light, and Shadow.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="getting-started-details">
+                            <div class="details-section">
+                                <h3>How to Get Started</h3>
+                                <ol class="start-steps">
+                                    <li>
+                                        <strong>Pick a Job</strong>
+                                        <p>Use /jobs browse to view available jobs. Choose from Miner, Farmer, or Hunter to start earning money.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Explore the Economy</strong>
+                                        <p>Visit /shop to buy and sell items. Build your fortune by trading or investing in rare items.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Level Up</strong>
+                                        <p>Complete tasks to gain experience and advance through the 100 levels.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Elemental Journey</strong>
+                                        <p>Gather elements:
+                                            <br>- Mine for Earth and Fire
+                                            <br>- Farm for Water
+                                            <br>- Battle mobs for Shadow
+                                            <br>- Explore for Light and Air</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            
+                            <div class="commands-section">
+                                <h3>Key Commands</h3>
+                                <div class="commands-grid">
+                                    <div class="command-card">
+                                        <code>/spawn</code>
+                                        <p>Return to main hub</p>
+                                    </div>
+                                    <div class="command-card">
+                                        <code>/jobs browse</code>
+                                        <p>View and join jobs</p>
+                                    </div>
+                                    <div class="command-card">
+                                        <code>/shop</code>
+                                        <p>Open ShopGUI</p>
+                                    </div>
+                                    <div class="command-card">
+                                        <code>/vote</code>
+                                        <p>Earn daily rewards</p>
+                                    </div>
+                                    <div class="command-card">
+                                        <code>/balance</code>
+                                        <p>Check money</p>
+                                    </div>
+                                    <div class="command-card">
+                                        <code>/warp</code>
+                                        <p>Teleport areas</p>
+                                    </div>
+                                    <div class="command-card">
+                                        <code>/helpop</code>
+                                        <p>Contact admins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tips-section">
+                            <h3>Pro Tips</h3>
+                            <ul class="tips-list">
+                                <li>Start Small: Focus on jobs and earning money</li>
+                                <li>Team Up: Join community for faster progress</li>
+                                <li>Daily Rewards: Use /vote for boosts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="rules" class="section">
+                <h1>Server Rules</h1>
+                <div class="rules-container">
+                    <div class="rule-section">
+                        <h2>🛡️ Player Conduct</h2>
+                        <ol class="rule-list">
+                            <li>Do not impersonate Staff or players via /nick, name changes, or alts.</li>
+                            <li>Do not ask Staff for money, items, ranks, or OP.</li>
+                            <li>Avoid controversial topics in Global Chat.</li>
+                            <li>No chat spamming or excessive repetition.</li>
+                            <li>Avoid creating TP traps or unsafe TPs.</li>
+                        </ol>
+                    </div>
+
+                    <div class="rule-section">
+                        <h2>💬 Communication Guidelines</h2>
+                        <ol class="rule-list" start="6">
+                            <li>Global Chat is English-only.</li>
+                            <li>No advertising of other servers or services.</li>
+                            <li>Respect and listen to Staff.</li>
+                            <li>Keep arguments private.</li>
+                            <li>Avoid discussing sensitive personal topics.</li>
+                        </ol>
+                    </div>
+
+                    <div class="rule-section">
+                        <h2>🚫 Prohibited Behaviors</h2>
+                        <ol class="rule-list" start="11">
+                            <li>Keep chat appropriate and respectful.</li>
+                            <li>Do not share private personal information.</li>
+                            <li>No discussions of self-harm or depression.</li>
+                            <li>Griefing and land destruction are forbidden.</li>
+                            <li>Manage spawner and redstone areas to prevent lag.</li>
+                        </ol>
+                    </div>
+
+                    <div class="rule-section">
+                        <h2>🏰 Server Integrity</h2>
+                        <ol class="rule-list" start="16">
+                            <li>Maintain distance between builds (250 blocks).</li>
+                            <li>No impersonation via nicknames or disguises.</li>
+                            <li>Play fairly without hacks or exploits.</li>
+                            <li>Avoid using special chat character codes.</li>
+                            <li>Only one alt account per player.</li>
+                            <li>Report bugs; do not exploit them.</li>
+                        </ol>
+                    </div>
+
+                    <div class="rule-disclaimer">
+                        <p>🔔 Rules are subject to Staff interpretation. Violations may result in warnings, mutes, or bans.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="ranks-levels" class="section">
+                <h1>Ranks and Levels</h1>
+                <div class="ranks-container">
+                    <div class="ranks-intro">
+                        <p>Climb the ranks, unlock incredible rewards, and become a legend in SnifferMC!</p>
+                    </div>
+
+                    <div class="rank-progression">
+                        <div class="rank-tier" data-tier="1" data-rank="hunter">
+                            <div class="rank-icon">🌱</div>
+                            <h3>Hunter</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="2" data-rank="hero">
+                            <div class="rank-icon">🛡️</div>
+                            <h3>Hero</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="3" data-rank="elite">
+                            <div class="rank-icon">⚔️</div>
+                            <h3>Elite</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="4" data-rank="titan">
+                            <div class="rank-icon">👑</div>
+                            <h3>Titan</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="5" data-rank="legend">
+                            <div class="rank-icon">🌟</div>
+                            <h3>Legend</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="6" data-rank="lord">
+                            <div class="rank-icon">🌠</div>
+                            <h3>Lord</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="7" data-rank="overlord">
+                            <div class="rank-icon">🔮</div>
+                            <h3>Overlord</h3>
+                        </div>
+                    </div>
+
+                    <div class="rank-progression-details">
+                        <h2>How to Progress</h2>
+                        <div class="progression-steps">
+                            <div class="step">
+                                <span class="step-icon">🏆</span>
+                                <p>Complete daily and weekly challenges</p>
+                            </div>
+                            <div class="step">
+                                <span class="step-icon">💡</span>
+                                <p>Participate in server events</p>
+                            </div>
+                            <div class="step">
+                                <span class="step-icon">🤝</span>
+                                <p>Collaborate with other players</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rank Information Popup -->
+                <div id="rank-popup" class="rank-popup">
+                    <div class="rank-popup-content">
+                        <span class="close-popup">&times;</span>
+                        <h2 id="popup-rank-name"></h2>
+                        <div id="popup-rank-details"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="battlepass" class="section">
+                <h1>Battle Pass</h1>
+                <p>Complete challenges and earn exclusive items.</p>
+                <!-- More content -->
+            </section>
+            
+            <section id="fusion-elements" class="section">
+                <div class="elements-container">
+                    <div class="elements-intro">
+                        <h2>Fusion Elements</h2>
+                        <p>Discover the magical elements that power SnifferMC's unique gameplay!</p>
+                    </div>
+
+                    <div class="elements-progression">
+                        <div class="element-card" data-element="fire">
+                            <div class="element-icon">🔥</div>
+                            <h3>Fire</h3>
+                        </div>
+
+                        <div class="element-card" data-element="water">
+                            <div class="element-icon">💧</div>
+                            <h3>Water</h3>
+                        </div>
+
+                        <div class="element-card" data-element="earth">
+                            <div class="element-icon">🌍</div>
+                            <h3>Earth</h3>
+                        </div>
+
+                        <div class="element-card" data-element="air">
+                            <div class="element-icon">💨</div>
+                            <h3>Air</h3>
+                        </div>
+
+                        <div class="element-card" data-element="light">
+                            <div class="element-icon">✨</div>
+                            <h3>Light</h3>
+                        </div>
+
+                        <div class="element-card" data-element="dark">
+                            <div class="element-icon">🌑</div>
+                            <h3>Dark</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="power-of-fusion-section">
+                        <h3>Power of Fusion</h3>
+                        <div class="fusion-description">
+                            <p>Combine the power of 6 unique elements to unlock extraordinary rewards!</p>
+                        </div>
+                        
+                        <div class="fusion-exchange-process">
+                            <div class="exchange-step">
+                                <div class="step-icon">🔄</div>
+                                <h4>Element Exchange</h4>
+                                <p>Collect and trade 6 different elemental</p>
+                            </div>
+                            <div class="step-icon-separator">➡️</div>
+                            <div class="exchange-step">
+                                <div class="step-icon">✨</div>
+                                <h4>Fusion Activation</h4>
+                                <p>Combine elements to activate Power of Fusion</p>
+                            </div>
+                            <div class="step-icon-separator">➡️</div>
+                            <div class="exchange-step">
+                                <div class="step-icon">🏆</div>
+                                <h4>Epic Rewards</h4>
+                                <p>Unlock legendary cards and unique bonuses</p>
+                            </div>
+                        </div>
+
+                        <div class="exchange-command-info">
+                            <h4>How to Exchange</h4>
+                            <div class="command-details">
+                                <div class="command-icon">💻</div>
+                                <div class="command-text">
+                                    <code class="game-command">/exchange</code>
+                                    <p>Use this command to access the Element Exchange system and start your fusion journey!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fusion-rewards-preview">
+                            <h4>Epic Rewards Preview</h4>
+                            <div class="rewards-card-grid">
+                                <div class="reward-card legendary">
+                                    <div class="reward-icon">🌟</div>
+                                    <h5>Spawners</h5>
+                                    <p>Combines all elemental powers</p>
+                                </div>
+                                <div class="reward-card mythic">
+                                    <div class="reward-icon">🔮</div>
+                                    <h5>Epic Vouchers</h5>
+                                    <p>Get Epic rewards</p>
+                                </div>
+                                <div class="reward-card epic">
+                                    <div class="reward-icon">⚡</div>
+                                    <h5>Crates Keys</h5>
+                                    <p>Get Crates keys: Atomic, infinity, cosmatic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Element Information Popup -->
+                <div id="element-popup" class="element-popup">
+                    <div class="element-popup-content">
+                        <div class="element-popup-header">
+                            <div class="element-popup-icon"></div>
+                            <h2 id="popup-element-name"></h2>
+                            <span class="close-popup">&times;</span>
+                        </div>
+                        <div class="element-popup-body">
+                            <div class="element-popup-description">
+                                <p id="popup-element-description"></p>
+                            </div>
+                            <div class="element-popup-details">
+                                <div class="element-popup-acquisition">
+                                    <h3>Acquisition Methods</h3>
+                                    <ul id="popup-acquisition-methods"></ul>
+                                </div>
+                                <div class="element-popup-powers">
+                                    <h3>Elemental Powers</h3>
+                                    <p id="popup-element-powers"></p>
+                                </div>
+                            </div>
+                            <div class="element-popup-rarity">
+                                <h3>Rarity</h3>
+                                <div class="rarity-stars" id="popup-element-rarity"></div>
+                            </div>
+                        </div>
+                        <div class="element-popup-footer">
+                            <button class="popup-action-btn" id="popup-exchange-btn">Exchange Element</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="levels" class="section">
+                <div class="section-header">
+                    <h2>Server Levels</h2>
+                    <p>Explore and advance through our server's 100 unique levels!</p>
+                </div>
+
+                <div class="levels-container">
+                    <div class="level-search-container">
+                        <input type="text" id="level-search-input" placeholder="Search levels by command, perk, or reward...">
+                        <div id="level-search-results" class="search-results"></div>
+                    </div>
+
+                    <div id="level-grid" class="level-grid"></div>
+                </div>
+
+                <!-- Level Details Popup -->
+                <div id="level-details-popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close-popup">&times;</span>
+                        <div id="level-details-content"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
     
-    <nav class="pirate-nav">
-        <div class="nav-logo">
-            <img src="https://cdn.craftingstore.net/rPPmDHlLQ1/643fab27abe404f43bf49cf13770c83c/m7cavzob2hpgahh6bndz.png" alt="SnifferMC Logo">
-            <span>SnifferMC (AxolotlMC) 🌍</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">🏠 Home</a></li>
-            <li><a href="#features">🌟 Features</a></li>
-            <li><a href="https://discord.gg/D5zgSBuJN8" class="btn discord-btn">🤝 Discord</a></li>
-            <li><a href="https://store.sniffermc.net" class="btn store-btn">🛒 Store</a></li>
-        </ul>
-        <div class="nav-buttons">
-        </div>
-    </nav>
-
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1>Best Minecraft Survival Server in 2025 🌍</h1>
-                <h2>No Grief | McMMO | Player Economy | Epic Survival Adventures! 🏕️</h2>
-                <div class="hero-description">
-                    <p>Experience the ultimate grief-free Minecraft survival server with cutting-edge features, player-driven economy, and non-stop excitement. Join SnifferMC and transform your Minecraft journey!</p>
-                </div>
-                <div class="server-ip-container">
-                    <input type="text" id="server-ip" value="play.sniffermc.net" readonly>
-                    <button onclick="copyIP()">Copy IP</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="features-section">
-            <div class="section-header">
-                <h2>Why SnifferMC is the Top Minecraft Server in 2025</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <img src="https://images.minecraft-heads.com/render2d/head/28/280bf3945a3931391486bac27aa87ae4.webp" alt="McMMO Skills">
-                    <h3>Advanced McMMO Skills 💪</h3>
-                    <p>Level up unique skills and unlock special abilities in our top-rated McMMO Minecraft server. Become a master of your craft with unparalleled progression! 🌟</p>
-                </div>
-                <div class="feature-card">
-                    <img src="https://minecraft-heads.com/themes/mch-v2/assets/images/chest.webp" alt="Exciting Crates">
-                    <h3>Exclusive Crate Rewards 📦</h3>
-                    <p>Unlock special crates and discover rare rewards in our community-driven Minecraft server. Enhance your survival experience with epic, unique loot! 🎁</p>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.minecraft-heads.com/render3d/head/6b/6b223c9ba84bf7ddcaff745f6d1a6467.webp" alt="Player Economy">
-                    <h3>Dynamic Player Economy 💰</h3>
-                    <p>Join jobs, set up player shops, and trade in our thriving, player-driven economy system. The most interactive Minecraft economy server in 2025! 🏪</p>
-                </div>
-                <div class="feature-card">
-                    <img src="https://images.minecraft-heads.com/render3d/head/89/89ed0be17d41010bf96d5366d4cff529.webp" alt="PvE Challenges">
-                    <h3>Epic PvE Challenges ⚔️</h3>
-                    <p>Face exciting Player vs. Environment challenges in our grief-free survival server. Test your skills, conquer unique quests, and become a Minecraft legend! 🌋</p>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2025 SnifferMC. All rights reserved. 🌍</p>
-                <div class="social-links">
-                    <a href="https://discord.gg/D5zgSBuJN8">🤝 Discord</a>
-                    <a href="https://store.sniffermc.net">🛒 Store</a>
-                </div>
-            </div>
-        </footer>
-
-        <script>
-            function copyIP() {
-                const ipInput = document.getElementById('server-ip');
-                ipInput.select();
-                document.execCommand('copy');
-                confetti({
-                    particleCount: 100,
-                    spread: 70,
-                    origin: { y: 0.6 }
-                });
-                alert('Server IP copied to clipboard! 🌍');
-            }
-
-            // Particle Configuration
-            tsParticles.load("particles-js", {
-                particles: {
-                    number: { value: 80, density: { enable: true, value_area: 800 } },
-                    color: { 
-                        value: ["#2563EB", "#6D28D9", "#1E293B", "#0A0E16", "#121826"] 
-                    },
-                    shape: { type: ["circle", "triangle"] },
-                    opacity: { value: 0.3, random: true },
-                    size: { value: 3, random: true },
-                    move: {
-                        enable: true,
-                        speed: 1.5,
-                        direction: "top",
-                        random: true,
-                        out_mode: "out",
-                        bounce: false
-                    },
-                    line_linked: {
-                        enable: true,
-                        distance: 150,
-                        color: "#2563EB",
-                        opacity: 0.2,
-                        width: 1
-                    }
-                },
-                interactivity: {
-                    detect_on: "canvas",
-                    events: {
-                        onhover: { enable: true, mode: "repulse" },
-                        onclick: { enable: true, mode: "push" }
-                    }
-                }
+    <script src="script.js"></script>
+    <script src="fusion-elements.js"></script>
+    <script>
+        function copyServerIP() {
+            var ipElement = document.getElementById("server-ip");
+            var ip = ipElement.textContent;
+            
+            navigator.clipboard.writeText(ip).then(function() {
+                // Temporary visual feedback
+                ipElement.setAttribute('data-tooltip', 'Copied!');
+                ipElement.classList.add('copied');
+                
+                // Reset tooltip after 2 seconds
+                setTimeout(function() {
+                    ipElement.setAttribute('data-tooltip', 'Click to copy');
+                    ipElement.classList.remove('copied');
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
             });
-        </script>
-    </body>
+        }
+    </script>
+</body>
 </html>

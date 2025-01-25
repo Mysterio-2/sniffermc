@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnifferMC Wiki - Battle Pass</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="battlepass.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wiki-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="sniffermc-logo.png" alt="SnifferMC Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item" data-section="getting-started">
+                        <span class="menu-icon">🚀</span>
+                        <span class="menu-text">Getting Started</span>
+                    </li>
+                    <li class="menu-item" data-section="rules">
+                        <span class="menu-icon">📜</span>
+                        <span class="menu-text">Rules</span>
+                    </li>
+                    <li class="menu-item" data-section="ranks-levels">
+                        <span class="menu-icon">🏆</span>
+                        <span class="menu-text">Ranks and Levels</span>
+                    </li>
+                    <li class="menu-item active" data-section="battlepass">
+                        <span class="menu-icon">🛡️</span>
+                        <span class="menu-text">Battle Pass</span>
+                    </li>
+                    <li class="menu-item" data-section="fusion-elements">
+                        <span class="menu-icon">⚡</span>
+                        <span class="menu-text">Fusion Elements</span>
+                    </li>
+                    <li class="menu-item" data-section="levels">
+                        <span class="menu-icon">🔝</span>
+                        <span class="menu-text">Levels</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            <section id="battlepass" class="section active">
+                <h1>Battle Pass</h1>
+                <div class="battlepass-container">
+                    <div class="battlepass-intro">
+                        <h2>🚀 Welcome to the Epic Battle Pass Adventure! 🏆</h2>
+                        <p>Embark on an incredible journey of progression, challenges, and jaw-dropping rewards! The Battle Pass is your ticket to exclusive content and epic achievements.</p>
+                    </div>
+
+                    <div class="battlepass-commands">
+                        <h2>🎮 Battle Pass Command Center</h2>
+                        <div class="command-grid">
+                            <div class="command-item">
+                                <div class="command-code">/bp 📊</div>
+                                <p>Dive into your Battle Pass progress and unlock your current rewards!</p>
+                            </div>
+                            <div class="command-item">
+                                <div class="command-code">/bp rewards 🎁</div>
+                                <p>Explore the treasure trove of amazing rewards waiting for you this season!</p>
+                            </div>
+                            <div class="command-item">
+                                <div class="command-code">/bp challenges 🏅</div>
+                                <p>Check out your active challenges and track your epic quest progress!</p>
+                            </div>
+                            <div class="command-item">
+                                <div class="command-code">/bp buy 💎</div>
+                                <p>Upgrade to the Premium Battle Pass and unlock ULTIMATE rewards!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="battlepass-seasons">
+                        <h2>🌟 Season 2 Spotlight 🌈</h2>
+                        <div class="season-details">
+                            <h3>Epic Season Details</h3>
+                            <ul>
+                                <li>🗓️ Start Date: February 1st, 2025</li>
+                                <li>⏳ Duration: 3 Exciting Months</li>
+                                <li>🏆 Total Progression: 100 Incredible Levels</li>
+                                <li>🎭 Tracks: Free and Premium Paths Available</li>
+                            </ul>
+                            <div class="season-highlight">
+                                <h4>🔥 Season 2 Exclusive Highlight 🔥</h4>
+                                <p>Get ready for mind-blowing rewards, unprecedented challenges, and an adventure like never before! Each level brings you closer to legendary status!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tier-details-popup" class="popup">
+        <div id="tier-details-content" class="popup-content"></div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="battlepass.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnifferMC Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wiki-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="sniffermc-logo.png" alt="SnifferMC Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item" data-section="getting-started">
+                        <span class="menu-icon">🚀</span>
+                        <span class="menu-text">Getting Started</span>
+                    </li>
+                    <li class="menu-item" data-section="rules">
+                        <span class="menu-icon">📜</span>
+                        <span class="menu-text">Rules</span>
+                    </li>
+                    <li class="menu-item active" data-section="ranks-levels">
+                        <span class="menu-icon">🏆</span>
+                        <span class="menu-text">Ranks and Levels</span>
+                    </li>
+                    <li class="menu-item" data-section="battlepass">
+                        <span class="menu-icon">🛡️</span>
+                        <span class="menu-text">Battle Pass</span>
+                    </li>
+                    <li class="menu-item" data-section="fusion-elements">
+                        <span class="menu-icon">⚡</span>
+                        <span class="menu-text">Fusion Elements</span>
+                    </li>
+                    <li class="menu-item" data-section="levels">
+                        <span class="menu-icon">🔝</span>
+                        <span class="menu-text">Levels</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            <section id="ranks-levels" class="section active">
+                <h1>Ranks and Levels</h1>
+                <div class="ranks-container">
+                    <div class="ranks-intro">
+                        <p>Climb the ranks, unlock incredible rewards, and become a legend in SnifferMC!</p>
+                    </div>
+
+                    <div class="rank-progression">
+                        <div class="rank-tier" data-tier="1" data-rank="hunter">
+                            <div class="rank-icon">🌱</div>
+                            <h3>Hunter</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="2" data-rank="hero">
+                            <div class="rank-icon">🛡️</div>
+                            <h3>Hero</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="3" data-rank="elite">
+                            <div class="rank-icon">⚔️</div>
+                            <h3>Elite</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="4" data-rank="titan">
+                            <div class="rank-icon">👑</div>
+                            <h3>Titan</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="5" data-rank="legend">
+                            <div class="rank-icon">🌟</div>
+                            <h3>Legend</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="6" data-rank="lord">
+                            <div class="rank-icon">🌠</div>
+                            <h3>Lord</h3>
+                        </div>
+
+                        <div class="rank-tier" data-tier="7" data-rank="overlord">
+                            <div class="rank-icon">🔮</div>
+                            <h3>Overlord</h3>
+                        </div>
+                    </div>
+
+                    <div class="rank-progression-details">
+                        <h2>How to Progress</h2>
+                        <div class="progression-steps">
+                            <div class="step">
+                                <span class="step-icon">🏆</span>
+                                <p>Complete daily and weekly challenges</p>
+                            </div>
+                            <div class="step">
+                                <span class="step-icon">💡</span>
+                                <p>Participate in server events</p>
+                            </div>
+                            <div class="step">
+                                <span class="step-icon">🤝</span>
+                                <p>Collaborate with other players</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rank Information Popup -->
+                <div id="rank-popup" class="rank-popup">
+                    <div class="rank-popup-content">
+                        <span class="close-popup">&times;</span>
+                        <h2 id="popup-rank-name"></h2>
+                        <div id="popup-rank-details"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
